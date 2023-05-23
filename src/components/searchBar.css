@@ -1,0 +1,130 @@
+.search-title {
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 54px;
+  margin-bottom: 30px;
+}
+.search-engine {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--mainColor);
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+#searchInput {
+  border: none;
+  resize: none;
+  width: 60vw;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+#searchInput:focus {
+  outline: none !important;
+}
+
+.search-btn {
+  padding: 20px 35px;
+  font-size: 20px;
+  background-color: var(--mainColor);
+  transition: 0.5s ease-in-out;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.search-btn:hover {
+  background-color: var(--darkMainColor);
+}
+
+.part-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  min-width: 120px;
+  margin: 15px;
+}
+
+.part-card:hover {
+  transform: scale(1.1);
+  color: var(--mainColor);
+  font-size: 18px;
+}
+
+.part-card img {
+  width: 120px;
+}
+
+.part-card span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.horizontal-slider svg {
+  font-size: 40px;
+  color: var(--mainColor);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.horizontal-slider svg:hover {
+  color: var(--darkMainColor);
+}
+
+.horizontal-slider {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-part-slider {
+  width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (width <= 1024px) {
+  .search-title {
+    font-size: 42px;
+  }
+}
+@media only screen and (width <= 760px) {
+  #searchInput {
+    border: none;
+    width: 60vw;
+    padding: 20px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+
+  .search-btn {
+    padding: 20px 20px;
+    font-size: 12px;
+    background-color: var(--mainColor);
+    transition: 0.5s ease-in-out;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .search-title {
+    flex-basis: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

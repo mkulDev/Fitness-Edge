@@ -1,0 +1,155 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 155px;
+  flex-wrap: wrap;
+}
+
+.detail-container h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--graphite);
+  margin: 30px 0px;
+}
+
+.exercise-gif {
+  width: 40%;
+  border-radius: 30px;
+  padding: 5px;
+  background-color: var(--mainColor);
+}
+
+.exercise-info {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.icons-bar {
+  display: grid;
+  grid-template-columns: 80px auto;
+  grid-gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.icons-bar img {
+  grid-auto-columns: auto;
+  width: 80px;
+  padding: 10px;
+  border: 2px solid rgba(61, 1, 82, 1);
+  background: radial-gradient(circle, rgba(106, 3, 141, 1) 0%, rgba(138, 18, 179, 1) 100%);
+  border-radius: 50%;
+  opacity: 1;
+}
+.icons-bar img:hover {
+  opacity: 0.8;
+  background-color: aliceblue;
+}
+
+.icons-bar p {
+  text-align: left;
+}
+
+/* exercise vide */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.video-container h2 {
+  text-align: center;
+  flex-basis: 100%;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.video-container h2 span {
+  color: var(--darkMainColor);
+}
+
+.video-card {
+  padding: 20px;
+  margin: 10px;
+  width: 320px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.video-container a:hover {
+  transform-origin: center;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-card h4 {
+  color: var(--darkMainColor);
+  font-size: 16px;
+}
+
+.video-card p {
+  font-size: 12px;
+}
+
+.similar-video {
+  text-align: center;
+  flex-basis: 100%;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+@media only screen and (width <= 1024px) {
+  .detail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 155px;
+    flex-wrap: wrap;
+  }
+
+  .detail-container h2 {
+    font-size: 28px;
+  }
+
+  .exercise-gif {
+    width: 90%;
+  }
+  .exercise-info {
+    width: 90%;
+    margin-left: 0px;
+  }
+
+  .icons-bar {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .video-container h2 {
+    font-size: 24px;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+
+  .similar-video {
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+}

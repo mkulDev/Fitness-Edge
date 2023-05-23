@@ -1,0 +1,141 @@
+#home {
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hero-text :nth-child(1) {
+  color: var(--mainColor);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-text :nth-child(2) {
+  color: var(--graphite);
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.hero-text :nth-child(3) {
+  font-size: 24px;
+  color: var(--graphite);
+}
+
+.hero-text :nth-child(4) {
+  color: var(--white);
+}
+
+.hero-text :nth-child(4) button {
+  font-size: 24px;
+  background-color: var(--mainColor);
+  padding: 12px 25px;
+  cursor: pointer;
+  color: white;
+  border: 2px solid var(--darkMainColor);
+  transition: 0.5 ease-in-out;
+  margin-top: 20px;
+}
+
+.hero-text a button:hover {
+  background-color: var(--darkMainColor);
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider {
+  width: 45vw;
+}
+
+.background-typo {
+  margin-top: 20px;
+  color: var(--mainColor);
+  font-weight: 700;
+  opacity: 0.1;
+  font-size: 42px;
+  z-index: 3;
+}
+
+@media only screen and (width <= 1200px) {
+  .background-typo {
+    display: none;
+  }
+}
+
+@media only screen and (width <= 1024px) {
+  .hero-text :nth-child(1) {
+    font-size: 24px;
+  }
+
+  .hero-text :nth-child(2) {
+    font-size: 32px;
+  }
+
+  .hero-text :nth-child(3) {
+    font-size: 16px;
+  }
+  .background-typo {
+    display: none;
+  }
+  .hero-text :nth-child(4) button {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (width <= 760px) {
+  .banner-container {
+    margin-top: 105px;
+  }
+
+  .hero-text :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero-text :nth-child(2) {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .hero-text :nth-child(3) {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  #home {
+    margin-top: 150px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .hero-text :nth-child(4) button {
+    font-size: 18px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-typo {
+    margin-top: 20px;
+    color: var(--mainColor);
+    font-weight: 700;
+    opacity: 0.1;
+    font-size: 42px;
+    text-align: center;
+  }
+}
