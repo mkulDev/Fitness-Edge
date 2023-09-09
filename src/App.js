@@ -1,5 +1,5 @@
-import React, {createContext, useState} from 'react'
-import {Route, Routes} from 'react-router-dom'
+import React, { createContext, useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './app.css'
 import Navbar from './components/Navbar'
 import ExerciseDetail from './components/Pages/ExerciseDetail'
@@ -14,10 +14,16 @@ const App = () => {
   return (
     <div className='container'>
       <Navbar />
-      <DataContext.Provider value={{setBodyPart, bodyPart, setExercise, exercise, setFilteredExercise, filteredExercise}}>
+      <DataContext.Provider value={{ setBodyPart, bodyPart, setExercise, exercise, setFilteredExercise, filteredExercise }}>
         <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/exercise/:id' element={<ExerciseDetail />} />
+          <Route
+            path='/'
+            element={<Homepage />}
+          />
+          <Route
+            path='/exercise/:id'
+            element={<ExerciseDetail />}
+          />
         </Routes>
       </DataContext.Provider>
     </div>

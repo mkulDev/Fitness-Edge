@@ -1,12 +1,12 @@
-import React, {useEffect, useState, useContext} from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import './searchBar.css'
-import {fetchURL} from '../utils/fetchURL'
+import { fetchURL } from '../utils/fetchURL'
 import HorizontalSlider from './HorizontalSlider'
-import {DataContext} from '../App'
-import {DBoptions} from '../utils/fetchURL'
+import { DataContext } from '../App'
+import { DBoptions } from '../utils/fetchURL'
 
 const SearchBar = () => {
-  const {exercise, setExercise, setFilteredExercise} = useContext(DataContext)
+  const { exercise, setExercise, setFilteredExercise } = useContext(DataContext)
   const [bodyPartsList, setBodyPartsList] = useState(null)
   const [search, setSearch] = useState('')
 

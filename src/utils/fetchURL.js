@@ -2,8 +2,8 @@ export const DBoptions = {
   method: 'GET',
   headers: {
     'X-RapidAPI-Key': process.env.REACT_APP_KEY,
-    'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-  },
+    'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+  }
 }
 
 export const fetchURL = async (url, options) => {
@@ -17,6 +17,6 @@ export const YouTubeOptions = {
   method: 'GET',
   headers: {
     'X-RapidAPI-Key': process.env.REACT_APP_KEY,
-    'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com',
-  },
+    'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
+  }
 }
